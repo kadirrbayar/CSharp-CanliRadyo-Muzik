@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E31574D-B539-499D-B6B3-62CAB8D1C80B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MuzikUygulamasi</RootNamespace>
+    <AssemblyName>MuzikUygulamasi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.2.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.2.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LibVLCSharp, Version=3.6.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.3.6.7\lib\net471\LibVLCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LibVLCSharp.WinForms, Version=3.6.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibVLCSharp.WinForms.3.6.7\lib\net40\LibVLCSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vlc.DotNet.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.3.1.0\lib\net45\Vlc.DotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Core.Interops, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.Interops.3.1.0\lib\net45\Vlc.DotNet.Core.Interops.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Forms, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Forms.3.1.0\lib\net45\Vlc.DotNet.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arama.Designer.cs">
+      <DependentUpon>arama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aramakutusu.cs" />
+    <Compile Include="aramapanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="aramapanel.Designer.cs">
+      <DependentUpon>aramapanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calmalistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calmalistesi.Designer.cs">
+      <DependentUpon>calmalistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calmalistesiekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calmalistesiekle.Designer.cs">
+      <DependentUpon>calmalistesiekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kategoribilgisi.cs" />
+    <Compile Include="kategoriler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kategoriler.Designer.cs">
+      <DependentUpon>kategoriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muzikbilgisi.cs" />
+    <Compile Include="muzikekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muzikekle.Designer.cs">
+      <DependentUpon>muzikekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muzikpanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="muzikpanel.Designer.cs">
+      <DependentUpon>muzikpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="radyoekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="radyoekle.Designer.cs">
+      <DependentUpon>radyoekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="radyopanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="radyopanel.Designer.cs">
+      <DependentUpon>radyopanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="radyobilgisi.cs" />
+    <Compile Include="Connect.cs" />
+    <Compile Include="girisyap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisyap.Designer.cs">
+      <DependentUpon>girisyap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hakkimizda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hakkimizda.Designer.cs">
+      <DependentUpon>hakkimizda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitol.Designer.cs">
+      <DependentUpon>kayitol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="muzikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="muzikler.Designer.cs">
+      <DependentUpon>muzikler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="radyolar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="radyolar.Designer.cs">
+      <DependentUpon>radyolar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arama.resx">
+      <DependentUpon>arama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aramapanel.resx">
+      <DependentUpon>aramapanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calmalistesi.resx">
+      <DependentUpon>calmalistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calmalistesiekle.resx">
+      <DependentUpon>calmalistesiekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kategoriler.resx">
+      <DependentUpon>kategoriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muzikekle.resx">
+      <DependentUpon>muzikekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muzikpanel.resx">
+      <DependentUpon>muzikpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="radyoekle.resx">
+      <DependentUpon>radyoekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="radyopanel.resx">
+      <DependentUpon>radyopanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisyap.resx">
+      <DependentUpon>girisyap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hakkimizda.resx">
+      <DependentUpon>hakkimizda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitol.resx">
+      <DependentUpon>kayitol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="muzikler.resx">
+      <DependentUpon>muzikler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="radyolar.resx">
+      <DependentUpon>radyolar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumsarkilar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumradyolar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hakkimizda2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\VideoLAN.LibVLC.Windows.3.0.18\build\VideoLAN.LibVLC.Windows.targets" Condition="Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.18\build\VideoLAN.LibVLC.Windows.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\VideoLAN.LibVLC.Windows.3.0.18\build\VideoLAN.LibVLC.Windows.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\VideoLAN.LibVLC.Windows.3.0.18\build\VideoLAN.LibVLC.Windows.targets'))" />
+  </Target>
+</Project>
