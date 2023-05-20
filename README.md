@@ -15,7 +15,7 @@ dmin girişi yaptıktan sonra müzik eklemek için müzik ekle menüsüne girini
 Eklemek istediğiniz müziği 'Google Drive' hesabınıza yükleyin.
 Google Drive hesabınıza yüklediğiniz müziğin üzerine sağ tıklayarak bağlantıyı kopyala seçeneğine tıklayınız.
 Ardından aşağıdaki gibi bir bağlantı linkine sahip olacaksınız. 
-"https://drive.google.com/file/d/10vAGMn-YdQd9qaPph_xjyLuxct93FMQP/view?usp=share_link"
+"https://drive.google.com/file/d/ <div style="color: red;">10vAGMn-YdQd9qaPph_xjyLuxct93FMQP</div> /view?usp=share_link"
 Bağlantı linkindeki "file/d/" kısmından sonraki ve "/view?" satırından önceki urlyi kopyalayın.(Kırmızı ile gösterilen kısım).
 Şimdi uygulamanıza geri dönebilir ve müzik linkine bu urlyi yapıştırabilirsiniz.
 Ardından sanatçı adını, müzik adını ve hangi kategoriye eklemek istediğinizi seçtikten sonra müziğiniz başarıyla veritabanına eklenecektir.
@@ -53,5 +53,5 @@ Uygulama sade yapısı ise istediğinizi kolayca bulmanıza yardımcı olmaktad�
 
 ## 📃 <a name="license">Lisans</a>
 
- - Copyright (C) 2023-present by [kadir](github.com/kadir008) ❤️️
+ - Copyright (C) 2023-Present by [kadir](github.com/kadir008) ❤️️
  - Licensed under the terms of the [GNU GENERAL PUBLIC LICENSE](https://github.com/kadir008/Muzik-ve-Radyo-Uygulamasi/blob/main/LICENSE)
