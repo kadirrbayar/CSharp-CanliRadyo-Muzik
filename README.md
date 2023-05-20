@@ -50,6 +50,7 @@ Uygulama sade yapısı ise istediğinizi kolayca bulmanıza yardımcı olmaktad�
     6-) Solutionu çalıştırın.
     7-) NuGet Package bölümüne girin ve 'LibVlc Windows' Paketini arayın. Eğer hali hazırda yüklü ise kaldırıp yeniden yükleyin.
     8-) Projenizi derleyip çalıştırın. 
+    Admin Bilgileri : "Kullanıcı Adı : admin" "Şifre : 12345" olarak belirlenmiştir.
 
 ## 📃 <a name="license">Lisans</a>
 
